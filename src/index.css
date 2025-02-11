@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+
+.root
+{
+    --backgroundColor: #59A96A;
+    --textColor: #FFFFFF;
+    --borderColor: #474A2C;
+    --primaryColor: #44CF6C;
+    --secondaryColor: #636940;
+
+
+
+    /* Another color pallete */
+
+    /* --backgroundColor: #233329;
+    --textColor:#FFFFFF;
+    --borderColor: #6A7152;
+    --primaryColor: #63A46C;
+    --secondaryColor: #63D471; */
+
+}
