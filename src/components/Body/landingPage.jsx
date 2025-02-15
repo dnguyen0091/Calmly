@@ -59,7 +59,7 @@ export default function LandingPage()
                 
 
             </div>
-            {showSignInUp && <SignInUp />}
+            {showSignInUp && <SignInUp onClose={() => setShowSignInUp(false)} />}
         </div>
         
 
