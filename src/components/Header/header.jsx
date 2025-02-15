@@ -22,7 +22,7 @@ export default function Header() {
           <p className="text-white ">Sign Up</p>
         </button>
       </div>
-      {showSignInUp && <SignInUp />}
+      {showSignInUp && <SignInUp onClose={() => setShowSignInUp(false)} />}
     </div>
   );
 }
