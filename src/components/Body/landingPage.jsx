@@ -16,7 +16,7 @@ export default function landingPage()
                     <p className="text-[5rem]">Welcome,</p>
                     <p className="text-[3rem]">To Calmly.</p>
                     <p className="text-[2rem]">Your Compassionate AI Therapist, Always Here to Listen.</p>
-                    <button onClick={handleSignInClick} className="signInUpButton flex justify-center align-center cursor-pointer border-[1px]-solid overflow-hidden relative m-0 p-[17px_35px] outline-none no-underline uppercase ">Get Started</button>
+                    <button onClick={handleSignInClick} className="signInUpButton flex justify-center align-center cursor-pointer w-[15vw] border-[1px]-solid overflow-hidden relative m-0 p-[17px_35px] outline-none no-underline uppercase ">Get Started</button>
                 </div>
 
                 {/* Right Container */}
@@ -31,24 +31,24 @@ export default function landingPage()
                 <div className="grid grid-cols-4 gap-[10vw]">
                     {/* List Goals and Background */}
 
-                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid">
-                        <p>What is this Calmly</p>
-                        <p>Feeling stressed, overwhelmed, or just need someone to talk to? Calmly is here to provide a safe, judgment-free space for you to express yourself and find peace of mind</p>
+                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid rounded-md">
+                        <p className="text-[2rem] font-bold p-[0.5em]">What is this Calmly</p>
+                        <p className="text-[1.25rem] p-[0.5em]">Feeling stressed, overwhelmed, or just need someone to talk to? Calmly is here to provide a safe, judgment-free space for you to express yourself and find peace of mind</p>
                     </div>
 
-                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid">
-                        <p>Why was this created</p>
-                        <p>Calmly is a passion project of mine that culminates from my interest in helping others with their mental health issues. As a person who has felt the gut wrenching feeling of lonliness and helplessness, this project aims to give people supplemental assistance by providing someone to talk to. Being able to confide in someone and freely express one's thoughts is paramount to maintaining a calm state of mind. I hope Calmly can assist as many people reach their version of a state of peace.</p>
+                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid rounded-md">
+                        <p className="text-[2rem] font-bold p-[0.5em]">Why was this created?</p>
+                        <p className="text-[1.25rem] p-[0.5em]">Calmly is a passion project born from my desire to help others with their mental health. As someone who has experienced loneliness and helplessness, I created Calmly to provide supplemental support—a safe space to confide and express yourself freely. My hope is that Calmly helps as many people as possible find their own version of peace.</p>
                     </div>
 
-                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid">
-                        <p>Who Created Calmly</p>
-                        <p>Hello, my name is David and I am the creator of Calmly. I am a Computer Science Major at UCF where I have aspirations to becoming a Full Stack Engineer and Project Manager.</p>
+                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid rounded-md">
+                        <p className="text-[2rem] font-bold p-[0.5em]">Who Created Calmly</p>
+                        <p className="text-[1.25rem] p-[0.5em]">Hello, my name is David and I am the creator of Calmly. I am a Computer Science Major at UCF where I have aspirations to becoming a Full Stack Engineer and Project Manager.</p>
                     </div>
 
-                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid">
-                        <p>How do you use Calmly</p>
-                        <p>Calmly was developed for ease of use. To start, all you need to do is sign up and start a chat with our AI Therapist. Calmly has a built in speech recognition and text-to-speech to simulate talking to an actual therapist. Though you can also opt to just chat to it like you would with any other chat bot like ChatGPT.  </p>
+                    <div className="flex flex-col align-center items-center w-[15vw] h-[30vh]  border-[1px] border-solid rounded-md">
+                        <p className="text-[2rem] font-bold p-[0.5em]">How do you use Calmly</p>
+                        <p className="text-[1.25rem] p-[0.5em]">Calmly is designed for ease of use. Simply sign up and start chatting with our AI Therapist. With built-in speech recognition and text-to-speech, it feels like talking to a real therapist—or you can chat text-only, just like any other chatbot.</p>
                     </div>
                 </div>
                 
