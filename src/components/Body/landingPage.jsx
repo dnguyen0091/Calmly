@@ -1,12 +1,17 @@
+import { useState } from 'react';
 import '../../index.css';
-export default function landingPage()
-{
+import SignInUp from '../SignInUp/signInUp.jsx';
 
+export default function LandingPage()
+{
+    const [showSignInUp, setShowSignInUp] = useState(false);
     const handleSignInClick = () => {
         console.log('Sign In/Up button clicked');
+        setShowSignInUp(true);
     };
     return (
 
+        
         // Overall container for the body
         <div className="flex flex-col justify-center items-center align-center mt-[20vh] gap-[10vh]">
             {/* Intro Container */}
@@ -54,6 +59,9 @@ export default function landingPage()
                 
 
             </div>
+            {showSignInUp && <SignInUp />}
         </div>
+
+
     )
 }
