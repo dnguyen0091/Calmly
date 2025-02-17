@@ -100,38 +100,38 @@ function formValidation()
     // check if all the fields are filled
     if(firstName.value === "")
     {
-        firstName.style.border = "0.5rem solid red";
+        firstName.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
     if(email.value === "")
     {
-        email.style.border = "0.5rem solid red";
+        email.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
     if(password.value === "")
     {
-        password.style.border = "0.5rem solid red";
+        password.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
     if(confirmPassword.value === "")
     {
-        confirmPassword.style.border = "0.5rem solid red";
+        confirmPassword.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
     if (errorFlag === false)
     {
-        confirmPassword.style.border = "0.5rem solid red";
+        confirmPassword.style.border = "0.2rem solid red";
         return errorFlag;
     }
     // check if the email is valid
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if(!emailPattern.test(email.value))
     {
-        email.style.border = "0.5rem solid red";
+        email.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
@@ -139,14 +139,14 @@ function formValidation()
     const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     if(!passwordPattern.test(password.value))
     {
-        password.style.border = "0.5rem solid red";
+        password.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
     // check if the password and confirm password are same
     if(password.value !== confirmPassword.value)
     {
-        password.style.border = "0.5rem solid red";
+        password.style.border = "0.2rem solid red";
         errorFlag = false;
     }
 
