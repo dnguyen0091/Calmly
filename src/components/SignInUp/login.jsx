@@ -1,5 +1,27 @@
 export default function Login()
 {
+
+
+    const handleSubmit = (event) => {
+
+        event.preventDefault();
+
+
+        if(formValidation())
+        {
+            console.log('Form Submitted');
+
+            //Connect API Endpoint here
+
+            resetForm();
+        }
+        else
+        {
+            console.log('Form Error');
+
+            // Add error message here
+        }
+    };
     return(
 
         // input fields for login
@@ -15,7 +37,7 @@ export default function Login()
             </div>
             
             
-            <button className="w-[15vw] h-[4vh] bg-transparent text-[var(--textColor)] border-[var(--backgroundColor)] border-[0.2rem] p-[0.5em] rounded-xl">Sign In</button>
+            <button type="submit" onClick={handleSubmit} className="w-[15vw] h-[4vh] bg-transparent text-[var(--textColor)] border-[var(--backgroundColor)] border-[0.2rem] p-[0.5em] rounded-xl">Sign In</button>
 
             {/* Add divider */}
             <div className="flex items-center flex-col">
@@ -25,11 +47,35 @@ export default function Login()
                     <div className="flex-grow border-t border-[var(--textColor)]-300"></div>
                 </div>
                 <div className="flex flex-row gap-[2rem]">
-                    <a href=""><img src="" alt="google Icon" /></a>
-                    <a href=""><img src="" alt="apple Icon" /></a>
+                    <a href=""><img src="../../assets/google.png" alt="google Icon" /></a>
+                    <a href=""><img src="../../assets/apple.png" alt="apple Icon" /></a>
                 </div>
             </div>
         </div>
 
     )
+}
+
+
+function formValidation()
+{
+    // get all the input fields
+    let email = document.querySelector('input[type="text"]').value;
+    let password = document.querySelector('input[type="password"]').value;
+
+    if(email === "" || password === "")
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+
+function resetForm()
+{
+    document.querySelector('input[type="text"]').value = "";
+    document.querySelector('input[type="password"]').value = "";
 }
